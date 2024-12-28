@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Fitness Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS for simplicity */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 2rem;
+            background-color: #f8f9fa;
+        }
+        .hero-content {
+            max-width: 50%;
+        }
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .programs {
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+        }
+        .program-grid {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .program-card {
+            background-color: #f1f1f1;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .program-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        .description-section {
+            padding: 2rem;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .personalization-form {
+            padding: 2rem;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        form label, form input, form select {
+            display: block;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        form input, form select {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        .about-us, .contact {
+            padding: 2rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Personalized Fitness Companion</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Affordable, Personalized Fitness for Everyone</h1>
+            <p>Custom fitness plans for thyroid, PCOD, pregnancy, and more.</p>
+            <a href="#form" class="btn">Get Your Custom Plan</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.pexels.com/photos/2247179/pexels-photo-2247179.jpeg?cs=srgb&dl=pexels-thelazyartist-2247179.jpg&fm=jpg" alt="Fitness Hero">
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <h2>Specialized Fitness Programs</h2>
+        <div class="program-grid">
+            <div class="program-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRxajdYfukqTXqG5xffiB9gRwVTM2IzW17A&s" alt="Thyroid Fitness">
+                <h3>Thyroid Fitness</h3>
+                <p>Low-impact, metabolism-boosting workouts tailored for thyroid health.</p>
+            </div>
+            <div class="program-card">
+                <img src="https://images.healthshots.com/healthshots/en/uploads/2023/07/28120251/Pavanmuktasana.jpg" alt="PCOD Fitness">
+                <h3>PCOD/PCOS Fitness</h3>
+                <p>Hormone-balancing routines with strength and cardio exercises.</p>
+            </div>
+            <div class="program-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3gI7DPxSBkbuupsbWpZUexdnOofpSU_2NXQ&s" alt="Pregnancy Fitness">
+                <h3>Pregnancy Fitness</h3>
+                <p>Safe prenatal and postnatal workouts for a healthy recovery.</p>
+            </div>
+            <div class="program-card">
+                <img src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Weight Loss Fitness">
+                <h3>Weight Loss Fitness</h3>
+                <p>Effective fat-burning exercises and diet plans designed to help you shed those extra kilos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description Section -->
+    <section class="description-section">
+        <h3>Customized Workout Plan for Muscle Building and Fat Loss</h3>
+        <p><strong>Beginner:</strong> Designed for those new to fitness or returning after a break. Focuses on building foundational strength, flexibility, and endurance with low-impact exercises.</p>
+        <p><strong>Intermediate:</strong> Ideal for individuals with moderate fitness experience. Combines strength, cardio, and flexibility training to improve stamina and enhance overall performance.</p>
+        <p><strong>Advanced:</strong> Tailored for fitness enthusiasts or athletes. Includes high-intensity workouts, complex routines, and advanced techniques to maximize strength, agility, and endurance.</p>
+    </section>
+
+    <!-- Personalization Form -->
+    <section id="form" class="personalization-form">
+        <h2>Get Your Customized Plan</h2>
+        <form>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" placeholder="Enter your height" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="fitness-level">Fitness Level:</label>
+            <select id="fitness-level" name="fitness-level" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <label for="health-concern">Health Concern:</label>
+            <input type="text" id="health-concern" name="health-concern" placeholder="E.g., Thyroid, PCOD" required>
+
+            <button type="submit" class="btn">Get My Plan</button>
+        </form>
+    </section>
+     <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get user inputs
+            const fitnessLevel = document.getElementById('fitness-level').value;
+            const healthConcern = document.getElementById('health-concern').value.toLowerCase();
+            const gender = document.getElementById('gender').value;
+
+            // Redirect based on user inputs
+            if (fitnessLevel === 'beginner' && healthConcern === 'pcod' && gender === 'female') {
+                window.location.href = 'pcodbeg.html';
+            } else if (fitnessLevel === 'intermediate' && healthConcern === 'pcod' && gender === 'female') {
+                window.location.href = 'pcodinter.html';
+            } else if (fitnessLevel === 'advanced' && healthConcern === 'pcod' && gender === 'female') {
+                window.location.href = 'pcodadv.html';
+            } else if (fitnessLevel === 'beginner' && healthConcern === 'weight loss'){
+		window.location.href = 'beginner.html';
+	    } else if (fitnessLevel === 'intermediate' && healthConcern === 'weight loss'){
+		window.location.href = 'intermediate.html';
+	    } else if (fitnessLevel === 'advanced' && healthConcern === 'weight loss'){
+		window.location.href = 'advanced.html';
+	    } else if (fitnessLevel === 'beginner' && healthConcern === 'thyroid'){
+		window.location.href = 'thyroidbeg.html';
+	    } else if (fitnessLevel === 'intermediate' && healthConcern === 'thyroid'){
+		window.location.href = 'thyroidinter.html';
+	    } else if (fitnessLevel === 'advanced' && healthConcern === 'thyroid'){
+		window.location.href = 'thyroidadv.html';
+	    } else if (fitnessLevel === 'beginner' && healthConcern === 'pregnancy' && gender === 'female'){
+		window.location.href = 'pregbeg.html';
+	    } else if (fitnessLevel === 'intermediate' && healthConcern === 'pregnancy' && gender === 'female'){
+		window.location.href = 'preginter.html';
+	    } else if (fitnessLevel === 'advanced' && healthConcern === 'pregnancy' && gender === 'female'){
+		window.location.href = 'pregadv.html';
+	    } else {
+                alert("No plan available for the selected options.");
+            }
+        });
+    </script>
+
+
+
+    <!-- About Us -->
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>We believe in making fitness accessible, affordable, and tailored to your needs. From thyroid health to pregnancy-safe workouts, we provide plans for everyone.</p>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: personalizedfitnesscompanion@gmail.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Personalized Fitness Companion. All rights reserved.</p>
+    </footer>
+</body>
+</html>
